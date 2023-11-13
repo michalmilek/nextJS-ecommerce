@@ -102,11 +102,11 @@ const LoginCredentials = () => {
         className="w-full">
         Submit
       </Button>
-      <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+      <p className="text-sm font-light text-gray-500 ">
         Dont you have an account?
         <Link
           href="/sign-up"
-          className="font-medium text-primary-600 hover:underline dark:text-primary-500">
+          className="font-medium text-primary-600 hover:underline ">
           {" "}
           Register here
         </Link>
