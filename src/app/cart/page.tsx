@@ -12,7 +12,7 @@ const page = async () => {
   }
   return (
     <div>
-      <Cart email={session.user!.email} />
+      <Cart email={session.user!.email as string} />
     </div>
   );
 };
