@@ -23,7 +23,7 @@ const Table = () => {
   return (
     <div className="px-4 py-6 mx-auto lg:py-4 md:px-6">
       <table className="min-w-full border text-xs sm:text-md md:text-lg border-gray-200 text-left bg-white text-black overflow-x-scroll">
-        <thead className="bg-gray-50 dark:bg-gray-800">
+        <thead className="bg-gray-50">
           <tr>
             <th className="px-2 py-2 sm:px-4 sm:py-2">Product Name</th>
             <th className="px-0 py-2 sm:px-4 sm:py-2">Price</th>

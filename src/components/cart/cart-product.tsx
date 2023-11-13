@@ -18,36 +18,30 @@ const CartProduct = ({ game }: { game: Game }) => {
       </div>
       <div className="w-2/3 px-4">
         <h2 className="mb-2 text-xl font-bold text-gray-800">{name}</h2>
-        <p className="text-gray-500 dark:text-gray-400 ">Picture frame</p>
+        <p className="text-gray-500 ">Picture frame</p>
       </div>
       <div className="hidden px-4 lg:block lg:w-2/12">
-        <p className="text-lg font-bold text-indigo-600 dark:text-gray-400">
-          {price}
-        </p>
-        <span className="text-xs text-gray-500 line-through dark:text-gray-400">
-          $1500
-        </span>
+        <p className="text-lg font-bold text-indigo-600 ">{price}</p>
+        <span className="text-xs text-gray-500 line-through ">$1500</span>
       </div>
       <div className="w-auto px-4 md:w-1/6 lg:w-2/12 ">
-        <div className="inline-flex items-center px-4 font-semibold text-gray-500 border border-gray-200 rounded-md dark:border-gray-700 ">
-          <button className="py-2 hover:text-gray-700 dark:text-gray-400">
+        <div className="inline-flex items-center px-4 font-semibold text-gray-500 border border-gray-200 rounded-md ">
+          <button className="py-2 hover:text-gray-700">
             <AiOutlineDash />
           </button>
           <input
             type="number"
-            className="w-12 px-2 py-4 text-center border-0 rounded-md dark:bg-gray-800 bg-gray-50 dark:text-gray-400 md:text-right"
+            className="w-12 px-2 py-4 text-center border-0 rounded-md  bg-gray-50 md:text-right"
             placeholder="1"
             value={quantity}
           />
-          <button className="py-2 hover:text-gray-700 dark:text-gray-400">
+          <button className="py-2 hover:text-gray-700 ">
             <BiPlus />
           </button>
         </div>
       </div>
       <div className="w-auto px-4 text-right md:w-1/6 lg:w-2/12 ">
-        <p className="text-lg font-bold text-indigo-600 dark:text-gray-400">
-          432432
-        </p>
+        <p className="text-lg font-bold text-indigo-600">432432</p>
       </div>
     </div>
   );

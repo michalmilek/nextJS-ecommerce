@@ -69,11 +69,11 @@ const HeaderSearchbar = () => {
           value={query}
           onChange={handleQueryChange}
           placeholder="Search"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
         />
       </form>
       {filteredSites.length > 0 && (
-        <ul className="absolute top-full left-0 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md shadow-md z-50 w-full">
+        <ul className="absolute top-full left-0 bg-white border border-gray-300 rounded-md shadow-md z-50 w-full">
           {filteredSites.map((site) => (
             <li key={site + "static pages available"}>
               <Link

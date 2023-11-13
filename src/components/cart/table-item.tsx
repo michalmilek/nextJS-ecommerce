@@ -23,7 +23,7 @@ const TableItem: React.FC<Props> = ({
 }) => {
   const dispatch = useDispatch();
   return (
-    <tr className="border-b text-xs sm:text-md md:text-lg border-gray-200 dark:border-gray-700">
+    <tr className="border-b text-xs sm:text-md md:text-lg border-gray-200 ">
       <td className="px-0 py-2 sm:px-4 sm:py-2">
         <div className="flex items-center">
           <div className="w-24 h-24 hidden sm:block">
@@ -34,10 +34,10 @@ const TableItem: React.FC<Props> = ({
             />
           </div>
           <div className="ml-2 sm:ml-4">
-            <h2 className="mb-2 text-md sm:text-xl font-bold dark:text-gray-400 whitespace-pre-wrap">
+            <h2 className="mb-2 text-md sm:text-xl font-bold whitespace-pre-wrap">
               {name}
             </h2>
-            <p className="hidden sm:block text-sm text-gray-500 dark:text-gray-400">
+            <p className="hidden sm:block text-sm text-gray-500">
               {description}
             </p>
           </div>

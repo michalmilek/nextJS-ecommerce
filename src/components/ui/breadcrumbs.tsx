@@ -27,7 +27,7 @@ const Breadcrumb = () => {
   const pathNames = paths.split("/").filter((path) => path);
   const iconClasses = clsx("w-3 h-3 text-white mx-1");
   const linkClasses = clsx(
-    "ms-1 text-sm font-medium text-white hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
+    "ms-1 text-sm font-medium text-white hover:text-blue-600 md:ms-2 "
   );
 
 

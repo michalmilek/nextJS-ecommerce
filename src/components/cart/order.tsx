@@ -21,10 +21,8 @@ const OrderItem = ({
       className={`flex items-center justify-between pb-4 mb-4 text-sm md:text-md ${
         isBorderB && "border-b border-gray-300"
       } `}>
-      <span className="text-gray-700 dark:text-gray-400">{label}</span>
-      <span className="font-bold text-gray-700 dark:text-gray-400">
-        {value}
-      </span>
+      <span className="text-gray-700">{label}</span>
+      <span className="font-bold text-gray-700">{value}</span>
     </div>
   );
 };
@@ -70,10 +68,8 @@ const Order = ({ subtotal, email }: { subtotal?: number; email: string }) => {
 
   return (
     <div className="w-full px-4 mb-4 lg:w-1/2 ">
-      <div className="p-6 border border-blue-100 dark:bg-gray-900 dark:border-gray-900 bg-gray-50 md:p-8">
-        <h2 className="mb-8 text-2xl font-bold text-gray-700 dark:text-gray-400">
-          Order Summary
-        </h2>
+      <div className="p-6 border border-blue-100 bg-gray-50 md:p-8">
+        <h2 className="mb-8 text-2xl font-bold text-gray-700">Order Summary</h2>
         <OrderItem
           label="Subtotal"
           value={"$" + totalPrice.toFixed(2)}
@@ -87,9 +83,7 @@ const Order = ({ subtotal, email }: { subtotal?: number; email: string }) => {
           label="Order Total"
           value={"$" + totalPriceWithTax.toFixed(2)}
         />
-        <h2 className="text-gray-500 dark:text-gray-400 text-sm md:text-md">
-          We offer:
-        </h2>
+        <h2 className="text-gray-500 text-sm md:text-md">We offer:</h2>
         <div className="flex items-center gap-2 mb-4 ">
           <a href="#">
             <img
