@@ -1,9 +1,9 @@
-import React from "react";
-import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+
 import Button from "../ui/button";
-import LoginCredentials from "./login-credentials";
 import Divider from "../ui/divider";
+import LoginCredentials from "./login-credentials";
 
 const LoginForm = () => {
   return (
@@ -16,19 +16,19 @@ const LoginForm = () => {
             <Divider text="Login with Providers" />
             <div className="mt-16 grid space-y-4">
               <Button className="w-full">
-                <div className="relative flex items-center space-x-4 justify-center">
+                <div className="relative flex items-center space-x-4 justify-center gap-2">
                   <FcGoogle className="absolute left-0 w-5" />
                   <span>Continue with Google</span>
                 </div>
               </Button>
               <Button className="w-full">
-                <div className="relative flex items-center space-x-4 justify-center">
+                <div className="relative flex items-center space-x-4 justify-center gap-2">
                   <FaGithub className="absolute left-0 w-5 text-gray-700" />
                   <span>Continue with Github</span>
                 </div>
               </Button>
               <Button className="w-full">
-                <div className="relative flex items-center space-x-4 justify-center">
+                <div className="relative flex items-center space-x-4 justify-center gap-2">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg"
                     className="absolute left-0 w-5"

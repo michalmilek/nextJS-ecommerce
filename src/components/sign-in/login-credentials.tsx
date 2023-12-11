@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Input from "../ui/input";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { useForm, SubmitHandler, Controller } from "react-hook-form";
-import Button from "../ui/button";
-import Link from "next/link";
 import { signIn } from "next-auth/react";
-import { toast } from "react-toastify";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import * as yup from "yup";
+
+import Button from "../ui/button";
+import Input from "../ui/input";
 
 interface FormData {
   email: string;
@@ -92,6 +93,7 @@ const LoginCredentials = () => {
           <Input
             {...field}
             label="Password"
+            type="password"
             error={errors.password && errors.password.message}
           />
         )}
@@ -111,6 +113,7 @@ const LoginCredentials = () => {
           Register here
         </Link>
       </p>
+      <p>Test account: test1234@test.com / test1234</p>
     </form>
   );
 };
