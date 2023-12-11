@@ -1,4 +1,3 @@
-import React from "react";
 import CustomLink from "../ui/link";
 import HeaderSearchbar from "./header-searchbar";
 

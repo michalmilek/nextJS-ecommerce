@@ -1,4 +1,5 @@
 import { Game } from "@/models/game";
+
 import Text from "../ui/text";
 import AddFeaturedToCart from "./add-featured-to-cart";
 

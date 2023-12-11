@@ -1,8 +1,8 @@
-import { createOrder, updateGameQuantity } from "@/libs/api";
-import { GameWithQuantity } from "@/libs/types";
-import { Game } from "@/models/game";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
+
+import { createOrder, updateGameQuantity } from "@/libs/api";
+import { GameWithQuantity } from "@/libs/types";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2023-10-16",

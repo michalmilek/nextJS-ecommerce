@@ -1,8 +1,10 @@
 "use client";
 
 import { Fragment, useEffect, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
 import { AiOutlineArrowRight } from "react-icons/ai";
+
+import { Dialog, Transition } from "@headlessui/react";
+
 import Button from "../ui/button";
 
 function InfoDialog() {
@@ -16,16 +18,15 @@ function InfoDialog() {
     setIsOpen(true);
   }
 
-    const [isMounted, setIsMounted] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    if (!isMounted) {
-      return null;
-    }
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <>

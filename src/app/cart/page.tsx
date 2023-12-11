@@ -1,7 +1,7 @@
-import Cart from "@/components/cart/cart";
 import { getServerSession } from "next-auth";
-import React from "react";
 import { redirect } from "next/navigation";
+
+import Cart from "@/components/cart/cart";
 
 const page = async () => {
   const session = await getServerSession();

@@ -1,11 +1,12 @@
 "use client";
-import { Provider } from "react-redux";
-
-import React from "react";
-import { store } from "@/redux/store";
-import { SessionProvider } from "next-auth/react";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import { SessionProvider } from "next-auth/react";
+import React from "react";
+import { Provider } from "react-redux";
+import { ToastContainer } from "react-toastify";
+
+import { store } from "@/redux/store";
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -1,5 +1,4 @@
 import LoginForm from "@/components/sign-in/login-form";
-import React from "react";
 
 const SignInPage = () => {
   return (

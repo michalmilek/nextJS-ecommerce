@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
-import Input from "../ui/input";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import Button from "../ui/button";
-import Link from "next/link";
 import axios from "axios";
-import { toast } from "react-toastify";
+import Link from "next/link";
 import { redirect } from "next/navigation";
+import { useEffect, useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import * as yup from "yup";
+
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import Button from "../ui/button";
+import Input from "../ui/input";
 
 interface FormData {
   email: string;

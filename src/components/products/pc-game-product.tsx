@@ -1,6 +1,6 @@
-import { Game } from "@/models/game";
 import Link from "next/link";
-import React from "react";
+
+import { Game } from "@/models/game";
 
 function PCGameProduct({ game }: { game: Game }) {
   return (

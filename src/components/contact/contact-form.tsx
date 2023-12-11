@@ -1,13 +1,15 @@
 "use client";
 
-import { useForm, SubmitHandler, Controller } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { useEffect, useState } from "react";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import * as yup from "yup";
-import Text from "../ui/text";
+
+import { yupResolver } from "@hookform/resolvers/yup";
+
 import Button from "../ui/button";
 import Input from "../ui/input";
+import Text from "../ui/text";
 import Textarea from "../ui/text-area";
-import { useEffect, useState } from "react";
 
 type ContactFormData = {
   email: string;

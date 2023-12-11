@@ -1,10 +1,12 @@
 "use client";
-import { useForm, Controller, SubmitHandler } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import Input from "../ui/input";
-import Button from "../ui/button";
 import { useEffect, useState } from "react";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import * as yup from "yup";
+
+import { yupResolver } from "@hookform/resolvers/yup";
+
+import Button from "../ui/button";
+import Input from "../ui/input";
 
 interface FormData {
   firstName: string;

@@ -1,7 +1,7 @@
-import React from "react";
-import Category from "./category";
 import { Category as CategoryType } from "@/models/category";
+
 import Text from "../ui/text";
+import Category from "./category";
 
 const Categories = ({ categories }: { categories: CategoryType[] }) => {
   return (

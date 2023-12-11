@@ -1,5 +1,7 @@
-import { Category } from "@/models/category";
 import Link from "next/link";
+
+import { Category } from "@/models/category";
+
 import Text from "../ui/text";
 
 const CategoriesSubtitles = ({ categories }: { categories: Category[] }) => {

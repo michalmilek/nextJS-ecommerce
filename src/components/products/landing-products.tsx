@@ -1,16 +1,19 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import PCGameProduct from "./pc-game-product";
-import { Game } from "@/models/game";
-import SearchGame from "./search-game";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import { useMediaQuery } from "react-responsive";
-import Text from "../ui/text";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { Game } from "@/models/game";
+
+import Text from "../ui/text";
+import PCGameProduct from "./pc-game-product";
+import SearchGame from "./search-game";
 
 const LandingProducts = ({
   games,

@@ -1,8 +1,5 @@
-import Button from "../ui/button";
-import Input from "../ui/input";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import NewsletterForm from "./newsletter-form";
 import InfoDialog from "./info-dialog";
+import NewsletterForm from "./newsletter-form";
 
 const Newsletter = () => {
   return (

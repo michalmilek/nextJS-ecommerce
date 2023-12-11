@@ -1,5 +1,5 @@
 import { Game } from "@/models/game";
-import React from "react";
+
 import PCGameProduct from "./pc-game-product";
 
 const Games = ({ games }: { games: Game[] }) => {

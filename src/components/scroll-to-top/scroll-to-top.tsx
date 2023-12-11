@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 
 const ScrollToTop = () => {
@@ -24,17 +24,15 @@ const ScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const [isMounted, setIsMounted] = useState(false);
 
-    const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
-
-    if (!isMounted) {
-      return null;
-    }
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <button

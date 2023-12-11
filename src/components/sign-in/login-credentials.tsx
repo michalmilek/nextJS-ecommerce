@@ -1,6 +1,5 @@
 "use client";
 
-import { yupResolver } from "@hookform/resolvers/yup";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -8,6 +7,8 @@ import { useEffect, useState } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+
+import { yupResolver } from "@hookform/resolvers/yup";
 
 import Button from "../ui/button";
 import Input from "../ui/input";

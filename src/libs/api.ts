@@ -1,7 +1,9 @@
-import { Category } from "@/models/category";
-import sanityClient from "./sanity";
-import { Game } from "@/models/game";
 import axios from "axios";
+
+import { Category } from "@/models/category";
+import { Game } from "@/models/game";
+
+import sanityClient from "./sanity";
 import { GameWithQuantity } from "./types";
 
 export const getCategories = async (): Promise<Category[]> => {
@@ -163,7 +165,6 @@ export const getFeaturedGames = async (): Promise<Game[]> => {
 
   return games;
 };
-
 
 export const updateGameQuantity = async (games: GameWithQuantity[]) => {
   const mutation = {

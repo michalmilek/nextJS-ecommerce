@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   AiFillHeart,
   AiOutlineHeart,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import Button from "../ui/button";
-import { store } from "@/redux/store";
-import { addItemToCart } from "@/redux/cartSlice";
+
 import { Game } from "@/models/game";
+import { addItemToCart } from "@/redux/cartSlice";
+import { store } from "@/redux/store";
+
+import Button from "../ui/button";
 
 const BuyPanel = ({
   name,

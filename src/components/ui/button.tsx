@@ -1,5 +1,5 @@
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 import { FaSpinner } from "react-icons/fa";
 
 interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {

@@ -1,10 +1,10 @@
-import React from "react";
 import {
-  FaTwitter,
-  FaFacebookSquare,
   FaDribbble,
+  FaFacebookSquare,
   FaGithub,
+  FaTwitter,
 } from "react-icons/fa";
+
 import Button from "../ui/button";
 
 const Footer = () => {

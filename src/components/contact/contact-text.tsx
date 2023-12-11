@@ -1,5 +1,5 @@
-import React from "react";
 import { FaEnvelope, FaPhone, FaTwitter } from "react-icons/fa";
+
 import Text from "../ui/text";
 import ContactIcon from "./contact-icon";
 

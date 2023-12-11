@@ -1,4 +1,3 @@
-import React from "react";
 import Coupon from "./coupon";
 import Order from "./order";
 import Table from "./table";

@@ -1,6 +1,7 @@
-import { prismadb } from "@/libs/prisma";
-import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
+import { NextResponse } from "next/server";
+
+import { prismadb } from "@/libs/prisma";
 
 export async function POST(req: Request, res: Response) {
   try {

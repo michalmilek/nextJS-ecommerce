@@ -1,5 +1,3 @@
-import React from "react";
-
 const Divider = ({ text }: { text: string }) => {
   return (
     <h3 className="flex items-center my-8">

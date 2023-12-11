@@ -1,13 +1,12 @@
+import { useDispatch } from "react-redux";
+
 import Button from "@/components/ui/button";
 import { GameWithQuantity } from "@/libs/types";
-import { Game } from "@/models/game";
 import {
   decrementQuantity,
   incrementQuantity,
   removeItemFromCart,
 } from "@/redux/cartSlice";
-import React from "react";
-import { useDispatch } from "react-redux";
 
 const CartItems = ({ items }: { items: GameWithQuantity[] }) => {
   const dispatch = useDispatch();

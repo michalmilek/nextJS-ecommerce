@@ -1,7 +1,7 @@
-import { Game } from "@/models/game";
-import React from "react";
 import { AiOutlineDash } from "react-icons/ai";
 import { BiPlus } from "react-icons/bi";
+
+import { Game } from "@/models/game";
 
 const CartProduct = ({ game }: { game: Game }) => {
   const { name, price, quantity, images } = game;

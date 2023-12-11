@@ -1,13 +1,5 @@
-import Button from "@/components/ui/button";
-import { getGame } from "@/libs/api";
-import React from "react";
-import {
-  AiFillHeart,
-  AiOutlineHeart,
-  AiOutlineShoppingCart,
-} from "react-icons/ai";
-
 import BuyPanel from "@/components/buy-panel/buy-panel";
+import { getGame } from "@/libs/api";
 
 const Page = async ({ params }: { params: { "game-slug": string } }) => {
   if (!params) {

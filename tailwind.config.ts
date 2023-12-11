@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
+
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config: Config = {
@@ -32,4 +33,4 @@ const config: Config = {
   },
   plugins: [],
 };
-export default config
+export default config;

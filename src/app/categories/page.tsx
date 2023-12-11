@@ -1,6 +1,5 @@
 import Categories from "@/components/categories/categories";
 import { getCategories } from "@/libs/api";
-import React from "react";
 
 const CategoriesPage = async () => {
   const categories = await getCategories();

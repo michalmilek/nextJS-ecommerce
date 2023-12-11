@@ -1,5 +1,4 @@
 import Banner from "@/components/banner/banner";
-import Categories from "@/components/categories/categories";
 import CategoriesSubtitles from "@/components/categories/categories-subitles";
 import Newsletter from "@/components/newsletter/newsletter";
 import FeaturedProduct from "@/components/products/featured-product";
@@ -7,12 +6,11 @@ import LandingProducts from "@/components/products/landing-products";
 import {
   getCategories,
   getFeaturedGames,
-  getGame,
   getGames,
   getGamesByName,
-  getOrders,
 } from "@/libs/api";
 import { Game } from "@/models/game";
+
 export default async function Home({
   _,
   searchParams,

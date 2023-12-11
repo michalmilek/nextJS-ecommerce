@@ -1,7 +1,6 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-
-import { Game } from "@/models/game";
 import { GameWithQuantity } from "@/libs/types";
+import { Game } from "@/models/game";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface CartState {
   showCart: boolean;

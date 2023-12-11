@@ -1,8 +1,10 @@
 import React from "react";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import Button from "../ui/button";
 import { useDispatch } from "react-redux";
+
 import { decrementQuantity, incrementQuantity } from "@/redux/cartSlice";
+
+import Button from "../ui/button";
 
 type Props = {
   _id: string;

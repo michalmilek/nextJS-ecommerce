@@ -1,10 +1,10 @@
 "use client";
 
-import { RootState } from "@/redux/store";
-import React, { useEffect, useState } from "react";
-import { AiOutlineDash } from "react-icons/ai";
-import { BiMinus, BiPlus } from "react-icons/bi";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
+import { RootState } from "@/redux/store";
+
 import TableItem from "./table-item";
 
 const Table = () => {

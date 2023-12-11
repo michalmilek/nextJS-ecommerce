@@ -1,19 +1,20 @@
 "use client";
 
+import { debounce } from "lodash";
+import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
-  useState,
-  useCallback,
   ChangeEvent,
   FormEvent,
-  useMemo,
+  useCallback,
   useEffect,
+  useState,
 } from "react";
-import { debounce } from "lodash";
-import Button from "../ui/button";
 import { AiOutlineSearch } from "react-icons/ai";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 import { Game } from "@/models/game";
-import Link from "next/link";
+
+import Button from "../ui/button";
 
 const SearchGame = ({ searchGames }: { searchGames: undefined | Game[] }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -64,17 +65,15 @@ const SearchGame = ({ searchGames }: { searchGames: undefined | Game[] }) => {
     }
   }, [searchParams, pathname, router, debouncedInputValue]);
 
+  const [isMounted, setIsMounted] = useState(false);
 
-    const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
-
-    if (!isMounted) {
-      return null;
-    }
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <form

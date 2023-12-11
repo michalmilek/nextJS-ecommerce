@@ -1,14 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import clsx from "clsx";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { signOut, useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { HiXMark } from "react-icons/hi2";
+import { toast } from "react-toastify";
+
+import { Order } from "@/models/order";
+
 import Button from "../ui/button";
 import CustomLink from "../ui/link";
-import { signOut, useSession } from "next-auth/react";
-import { Order } from "@/models/order";
-import { toast } from "react-toastify";
-import { HiXMark } from "react-icons/hi2";
 
 const MobileMenu = ({ orders }: { orders: Order[] | undefined }) => {
   const [loading, setLoading] = useState(false);

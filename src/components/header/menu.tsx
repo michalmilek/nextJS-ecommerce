@@ -1,16 +1,18 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Button from "../ui/button";
-import { useMediaQuery } from "react-responsive";
+import { signOut, useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import MobileMenu from "./mobile-menu";
-import { useSession, signOut } from "next-auth/react";
-import CustomLink from "../ui/link";
-import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useMediaQuery } from "react-responsive";
+import { toast } from "react-toastify";
+
 import { Order } from "@/models/order";
+import { RootState } from "@/redux/store";
+
+import Button from "../ui/button";
+import CustomLink from "../ui/link";
+import MobileMenu from "./mobile-menu";
 
 const Menu = ({ orders }: { orders: Order[] | undefined }) => {
   const [loading, setLoading] = useState(false);

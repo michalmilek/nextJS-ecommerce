@@ -1,9 +1,10 @@
 "use client";
 
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
-import { Category } from "@/models/category";
-import React, { useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
 import { FaTag } from "react-icons/fa";
+
+import { Category } from "@/models/category";
 
 const CategoriesGames = ({ categories }: { categories: Category[] }) => {
   const searchParams = useSearchParams();

@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
-import Button from "../ui/button";
-import { RootState } from "@/redux/store";
-import { useSelector } from "react-redux";
-import { getStripe } from "@/libs/load-stripe";
 import axios from "axios";
+import { useEffect, useMemo, useState } from "react";
+import { useSelector } from "react-redux";
+
+import { getStripe } from "@/libs/load-stripe";
+import { RootState } from "@/redux/store";
+
+import Button from "../ui/button";
 
 const OrderItem = ({
   label,

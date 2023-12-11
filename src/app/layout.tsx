@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Poppins, Raleway } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
-import Providers from "@/providers/providers";
-import CartSidebar from "@/components/cart/cart-sidebar/cart-sidebar";
+
 import { getServerSession } from "next-auth";
-import { Order } from "@/models/order";
-import { getOrders } from "@/libs/api";
+import { Poppins, Raleway } from "next/font/google";
+
+import CartSidebar from "@/components/cart/cart-sidebar/cart-sidebar";
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
 import Header2 from "@/components/header/header2";
 import ScrollToTop from "@/components/scroll-to-top/scroll-to-top";
+import { getOrders } from "@/libs/api";
+import { Order } from "@/models/order";
+import Providers from "@/providers/providers";
 
 const poppins = Poppins({
   subsets: ["latin"],

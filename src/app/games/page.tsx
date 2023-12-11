@@ -3,13 +3,11 @@ import Games from "@/components/products/games";
 import SearchGame from "@/components/products/search-game";
 import {
   getCategories,
-  getCategory,
   getCategoryGames,
   getGames,
   getGamesByName,
 } from "@/libs/api";
 import { Game } from "@/models/game";
-import React from "react";
 
 type Props = {
   params?: {

@@ -1,5 +1,6 @@
-import { Order } from "@/models/order";
 import React from "react";
+
+import { Order } from "@/models/order";
 
 const OrdersList = ({ orders }: { orders: Order[] }) => {
   return (

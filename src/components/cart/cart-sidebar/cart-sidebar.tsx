@@ -1,15 +1,17 @@
 "use client";
 
+import clsx from "clsx";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { HiXMark } from "react-icons/hi2";
+import { useDispatch, useSelector } from "react-redux";
+
 import Button from "@/components/ui/button";
+import CustomLink from "@/components/ui/link";
 import { toggleCart } from "@/redux/cartSlice";
 import { RootState } from "@/redux/store";
-import clsx from "clsx";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useDispatch, useSelector } from "react-redux";
+
 import CartItems from "./cart-items";
-import { HiXMark } from "react-icons/hi2";
-import CustomLink from "@/components/ui/link";
 
 const CartSidebar = () => {
   const isCartOpen = useSelector((state: RootState) => state.cart.showCart);
@@ -29,16 +31,15 @@ const CartSidebar = () => {
     [cartItems]
   );
 
-    const [isMounted, setIsMounted] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    if (!isMounted) {
-      return null;
-    }
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <>

@@ -1,7 +1,6 @@
-import React, { LinkHTMLAttributes } from "react";
 import clsx from "clsx";
-import { FaSpinner } from "react-icons/fa";
 import Link, { LinkProps } from "next/link";
+import React from "react";
 
 interface ButtonProps extends LinkProps {
   variant?: "primary" | "secondary" | "outline";

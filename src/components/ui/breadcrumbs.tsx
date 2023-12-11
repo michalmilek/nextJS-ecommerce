@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { IconType } from "react-icons";
 import clsx from "clsx";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 interface BreadcrumbItem {
   label: string;
@@ -30,17 +29,15 @@ const Breadcrumb = () => {
     "ms-1 text-sm font-medium text-white hover:text-blue-600 md:ms-2 "
   );
 
+  const [isMounted, setIsMounted] = useState(false);
 
-    const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
-    useEffect(() => {
-      setIsMounted(true);
-    }, []);
-
-    if (!isMounted) {
-      return null;
-    }
-
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <nav
