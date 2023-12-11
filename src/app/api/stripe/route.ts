@@ -52,7 +52,7 @@ export async function POST(req: Request) {
     const result = await updateGameQuantity(cartItems);
     console.log("🚀 ~ result:", result);
 
-    const test = await createOrder(cartItems, userEmail);
+    await createOrder(cartItems, userEmail);
 
     return NextResponse.json(session, {
       status: 200,
