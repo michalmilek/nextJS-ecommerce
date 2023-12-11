@@ -29,7 +29,14 @@ const OrderItem = ({
   );
 };
 
-const Order = ({ subtotal, email }: { subtotal?: number; email: string }) => {
+const Order = ({
+  // eslint-disable-next-line no-unused-vars
+  subtotal: _,
+  email,
+}: {
+  subtotal?: number;
+  email: string;
+}) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

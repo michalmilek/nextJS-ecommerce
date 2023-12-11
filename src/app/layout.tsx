@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { getServerSession } from "next-auth";
 import { Poppins, Raleway } from "next/font/google";
+import React from "react";
 
 import CartSidebar from "@/components/cart/cart-sidebar/cart-sidebar";
 import Footer from "@/components/footer/footer";

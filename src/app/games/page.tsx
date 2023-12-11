@@ -37,7 +37,6 @@ const GamesPage = async (props: Props) => {
 
   if (props.searchParams?.name) {
     gamesFilteredByName = await getGamesByName(props.searchParams.name);
-  } else {
   }
 
   return (

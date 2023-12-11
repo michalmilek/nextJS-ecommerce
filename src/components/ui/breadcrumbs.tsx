@@ -6,11 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-interface BreadcrumbItem {
-  label: string;
-  link?: string;
-}
-
 interface ComponentProps {
   className?: string;
 }

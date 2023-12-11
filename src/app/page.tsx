@@ -12,6 +12,7 @@ import {
 import { Game } from "@/models/game";
 
 export default async function Home({
+  // eslint-disable-next-line no-unused-vars
   _,
   searchParams,
 }: {

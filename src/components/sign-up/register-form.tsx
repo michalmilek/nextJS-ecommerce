@@ -45,7 +45,7 @@ const RegisterForm = () => {
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const { confirmPassword, ...rest } = data;
+      const { confirmPassword: _, ...rest } = data;
       await axios.post("/api/auth/sign-up", rest);
       toast.success(
         "User succesfully registered. Now login with to your account."

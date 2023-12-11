@@ -1,6 +1,5 @@
 "use client";
 
-import { debounce } from "lodash";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -26,11 +25,6 @@ const SearchGame = ({ searchGames }: { searchGames: undefined | Game[] }) => {
   const handleSearchInput = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
-
-  const debouncedHandleSearch = useCallback(
-    debounce(handleSearchInput, 500),
-    []
-  );
 
   const handleSubmit = useCallback(
     (event: FormEvent) => {

@@ -196,7 +196,7 @@ export const createOrder = async (
       {
         create: {
           _type: "order",
-          items: games.map((game, index) => ({
+          items: games.map((game) => ({
             game: {
               _key: game._id + String(new Date()) + userEmail,
               _type: "reference",

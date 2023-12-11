@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { prismadb } from "@/libs/prisma";
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
   try {
     const { email, password } = await req.json();
 

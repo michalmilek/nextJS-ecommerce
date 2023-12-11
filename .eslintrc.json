@@ -11,6 +11,7 @@
     "@next/next/no-img-element": "off",
     "import/first": "error",
     "import/newline-after-import": "error",
-    "import/no-duplicates": "error"
+    "import/no-duplicates": "error",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^_" }]
   }
 }

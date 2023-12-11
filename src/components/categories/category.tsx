@@ -1,6 +1,6 @@
-import { Category } from "@/models/category";
+import { Category as CategoryType } from "@/models/category";
 
-function Category({ category }: { category: Category }) {
+function Category({ category }: { category: CategoryType }) {
   return (
     <div className="cursor-pointer relative w-[150px] h-[200px] md:w-[280px] md:h-[300px] rounded-xl overflow-hidden shadow-md">
       <img
